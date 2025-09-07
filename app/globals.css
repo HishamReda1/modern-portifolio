@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border !scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  button {
+    @apply active:outline-none;
+  }
+}
+
+@layer utilities {
+  /* Arabic font utilities */
+  .font-arabic {
+    font-family: 'Cairo', sans-serif;
+  }
+
+  /* Auto-detect Arabic text and apply Cairo font */
+  [lang="ar"], [dir="rtl"] {
+    font-family: 'Cairo', sans-serif;
+  }
+
+  /* Hero responsive background swap */
+  @media (max-width: 768px) {
+    .hero-bg {
+      background-image: url('/bg-small.jpg') !important;
+      background-size: cover !important;
+      background-position: center center !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-bg {
+      background-image: url('/bg-small.jpg') !important;
+      background-size: cover !important;
+      background-position: center center !important;
+    }
+  }
+
+  .heading {
+    @apply font-bold text-4xl md:text-5xl text-center;
+  }
+
+  /* Updated styles for Experience section */
+  .section-padding {
+    @apply md:py-20 py-10;
+  }
+
+  .exp-card-wrapper {
+    @apply flex flex-col-reverse xl:flex-row xl:gap-20 gap-10 justify-between;
+  }
+
+  /* Change timeline-wrapper to be centered */
+  .timeline-wrapper {
+    @apply absolute top-0 left-1/2 -translate-x-1/2 h-full flex justify-center;
+  }
+
+  /* Change timeline background to match the main page background */
+  .timeline {
+    @apply absolute z-30 h-full w-28 bg-black-100;
+  }
+
+  .gradient-line {
+    width: 2px;
+    background: linear-gradient(0deg,
+        rgba(69, 222, 196, 0) 0%,
+        #62e0ff 25%,
+        #52aeff 37.51%,
+        #fd5c79 62.83%,
+        #6d45ce 92.91%);
+  }
+
+  /* Move gradient line to the far left on small screens */
+  @media (max-width: 768px) {
+    .timeline-wrapper {
+      left: 0;
+      transform: none;
+      justify-content: flex-start;
+    }
+
+    .timeline {
+      z-index: 10;
+    }
+
+    .gradient-line {
+      position: relative;
+      z-index: 0;
+    }
+  }
+
+  .timeline-logo {
+    @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-border bg-black-100;
+  }
+
+  .card-border {
+    @apply border border-border bg-black-100;
+  }
+
+  .card {
+    --start: 0;
+    position: relative;
+    z-index: 40;
+    overflow: hidden;
+    transition: border-color 1s ease-in-out;
+  }
+
+  .card::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    border: 2px solid transparent;
+    background: var(--gradient);
+    background-attachment: fixed;
+    mask: linear-gradient(#0000, #0000),
+      conic-gradient(from calc((var(--start) - 15) * 1deg),
+        #ffffff1f 0deg,
+        white,
+        #ffffff00 100deg);
+    mask-composite: intersect;
+    mask-clip: padding-box, border-box;
+    opacity: 0;
+    transition: 0.5s ease;
+  }
+
+  .glow {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(10px);
+    filter: saturate(200);
+  }
+
+  .card:hover::before {
+    opacity: 1;
+  }
+}
+
+
