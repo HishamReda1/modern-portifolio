@@ -1,10 +1,16 @@
+"use client";
+import dynamic from "next/dynamic";
+
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 import TitleHeader from "../components/ui/TitleHeader";
-import TechIconCardExperience from "../components/models/tech_logos/TechIconCardExperience";
-import { techStackIcons } from "@/data";
 
+import { techStackIcons } from "@/data";
+const TechIconCardExperience = dynamic(
+  () => import("@/components/models/tech_logos/TechIconCardExperience"),
+  { ssr: false }
+);
 const TechStack = () => {
   useGSAP(() => {
     gsap.fromTo(
