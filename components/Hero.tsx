@@ -6,7 +6,9 @@ import CoverDemo from "./cover-demo";
 
 const Hero = () => {
   return (
-    <div className="relative flex items-center justify-center min-h-screen w-full">
+    // تم تغيير min-h-screen إلى min-h-[100dvh] لضبط الارتفاع بشكل أدق على جميع الشاشات
+    <div className="relative flex items-center justify-center min-h-[100dvh] w-full overflow-hidden">
+      
       {/* Background Image and Overlay */}
       <div
         className="hero-bg absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat"
@@ -15,9 +17,9 @@ const Hero = () => {
           backgroundSize: "cover",
           backgroundPosition: "center center",
           backgroundAttachment: "fixed",
+          // إذا أردت إزالة التدرج الشفاف، قم بحذف السطرين القادمين
           maskImage: "linear-gradient(to bottom, black 80%, transparent 100%)",
-          WebkitMaskImage:
-            "linear-gradient(to bottom, black 80%, transparent 100%)",
+          WebkitMaskImage: "linear-gradient(to bottom, black 80%, transparent 100%)",
         }}
       />
 

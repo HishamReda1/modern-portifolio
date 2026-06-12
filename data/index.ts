@@ -47,19 +47,7 @@ export const expCards = [
       "Integrated 3D visualizations to enhance user engagement across platforms.",
     ],
   },
-  {
-    review:
-      "Dear Hisham, I just wanted to sincerely thank you for the amazing work you did on designing my application logo. I truly appreciate your creativity, attention to detail, and the effort you put into making a design that perfectly reflects the vision of my project.",
-    imgPath: "/freelancer-1.svg",
-    logoPath: "freelancer-1.svg",
-    title: "Freelance Frontend Developer",
-    date: "2022 - Present",
-    responsibilities: [
-      "Built a feature-rich e-commerce store using React, Bootstrap, and Axios.",
-      "Developed a movie browser app using React and TMDB API.",
-      "Built a personal portfolio using HTML, CSS, JavaScript, and Bootstrap.",
-    ],
-  },
+  
   {
     review: "",
     imgPath: "/FCI.png",
@@ -76,7 +64,7 @@ export const expCards = [
 export const expLogos = [
   { name: "EITS", imgPath: "/Logoicon (1).svg" },
   { name: "Cosmic Coasters", imgPath: "/as_logo.svg" },
-  { name: "freelancer", imgPath: "/freelancer-1.svg" },
+
 ];
 
 export const gridItems = [

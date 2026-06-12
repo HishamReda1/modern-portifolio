@@ -432,6 +432,13 @@ export function PortfolioSlider() {
   const videoH    = Math.max(containerH - barsH - titleH - infoH - contentPad - gapsH, 140);
 
   return (
+
+
+
+
+
+
+    
     <div
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
@@ -445,6 +452,10 @@ export function PortfolioSlider() {
         flexShrink: 0,
       }}
     >
+       <h1 className="heading">
+        A small selection of{" "}
+        <span className="text-purple">recent projects</span>
+      </h1>
       {/* ── Immersive background ── */}
       <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
         {/* Incoming image (bottom) */}

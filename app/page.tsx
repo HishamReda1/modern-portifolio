@@ -19,26 +19,23 @@ import { PortfolioSlider } from "@/components/PortfolioSlider";
 
 const Home = () => {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-clip">
-   
-      <div className="max-w-7xl w-full">
-        <FloatingNav navItems={navItems} />
-         <Hero />
-        <AutoSlider />
+   <main className="relative bg-black-100 flex flex-col overflow-clip">
+  <FloatingNav navItems={navItems} />
 
-        <PortfolioSlider />
-        <RecentProjects />
+  <Hero />
 
-      
-        {/* Orman Hospital Project Section */}
-
-        <Clients />
-        <Experience />
-        <TechStack/>
-        <Approach />
-        <Footer />
-      </div>
-    </main>
+  <div className="max-w-7xl w-full mx-auto">
+    <AutoSlider />
+      <RecentProjects />
+    <PortfolioSlider />
+  
+    <Clients />
+    <Experience />
+    <TechStack />
+    <Approach />
+    <Footer />
+  </div>
+</main>
   );
 };
 
