@@ -452,10 +452,7 @@ export function PortfolioSlider() {
         flexShrink: 0,
       }}
     >
-       <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
-      </h1>
+   
       {/* ── Immersive background ── */}
       <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
         {/* Incoming image (bottom) */}

@@ -4,7 +4,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
-import CompareDemo from "./compare-autoplay-demo";
+
 
 
 const RecentProjects = () => {
@@ -78,10 +78,7 @@ const RecentProjects = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center items-center mt-10">
-     
-        <CompareDemo />
-      </div>
+  
     </div>
   );
 };

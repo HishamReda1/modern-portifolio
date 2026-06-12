@@ -3,7 +3,7 @@
 import { navItems } from "@/data";
 
 import Hero from "@/components/Hero";
-
+import CompareDemo from "@/components/compare-autoplay-demo";
 import Footer from "@/components/Footer";
 import Clients from "@/components/Clients";
 import Approach from "@/components/Approach";
@@ -28,7 +28,10 @@ const Home = () => {
     <AutoSlider />
       <RecentProjects />
     <PortfolioSlider />
-  
+     
+     
+        <CompareDemo />
+      
     <Clients />
     <Experience />
     <TechStack />
