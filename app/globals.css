@@ -213,7 +213,6 @@
   .card:hover::before {
     opacity: 1;
   }
-<<<<<<< HEAD
 
   @keyframes portfolio-scanline {
     0% {
@@ -264,8 +263,4 @@
   .animate-portfolio-pulse {
     animation: portfolio-pulse 1.8s ease-in-out infinite;
   }
-=======
->>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
 }
-
-

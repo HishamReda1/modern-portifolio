@@ -26,14 +26,7 @@ const config = {
       },
     },
     extend: {
-<<<<<<< HEAD
-      fontFamily: {
-        jakarta: ["var(--font-plus-jakarta-sans)", "sans-serif"],
-        oxanium: ["var(--font-oxanium)", "sans-serif"],
-        mono: ["var(--font-jetbrains-mono)", "ui-monospace", "monospace"],
-      },
-=======
->>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
+
       colors: {
         black: {
           DEFAULT: "#000",

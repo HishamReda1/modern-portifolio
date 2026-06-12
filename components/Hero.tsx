@@ -16,33 +16,27 @@ const Hero = () => {
           backgroundPosition: "center center",
           backgroundAttachment: "fixed",
           maskImage: "linear-gradient(to bottom, black 80%, transparent 100%)",
-          WebkitMaskImage: "linear-gradient(to bottom, black 80%, transparent 100%)",
+          WebkitMaskImage:
+            "linear-gradient(to bottom, black 80%, transparent 100%)",
         }}
       />
+
       <div className="absolute top-0 left-0 w-full h-full bg-black-100 opacity-30" />
 
-      {/* Left-aligned Content */}
+      {/* Content */}
       <div className="relative z-10 flex justify-start w-full max-w-7xl px-5 sm:px-10 backdrop-blur-sm md:backdrop-blur-none">
         <div className="max-w-[80vw] md:max-w-xl lg:max-w-[40vw] flex flex-col items-center md:items-start justify-center text-center md:text-left">
+          
           <h2 className="uppercase tracking-widest text-xs text-blue-100 max-w-80 text-center md:text-left">
-<<<<<<< HEAD
-           REAL-TIME BUILDING SYSTEMS & DIGITAL TWIN INTERFACES
-=======
-            Dynamic Web Magic with Next.js
->>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
+            REAL-TIME BUILDING SYSTEMS & DIGITAL TWIN INTERFACES
           </h2>
 
-
-<CoverDemo/>
-
+          <CoverDemo />
 
           <p className="text-center md:text-left md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">
-<<<<<<< HEAD
-            Hisham Gbely, a GUI Engineer | Schneider EBO | Digital Twin | Unreal Engine Developer 
-=======
-            Hisham Gbely, a 3D Visualizer & Next.js Developer
->>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
-            based in EGYPT.
+            Hisham Gbely, a GUI Engineer | Schneider EBO | Digital Twin | Unreal Engine Developer
+            <br />
+            Hisham Gbely, a 3D Visualizer & Next.js Developer based in EGYPT.
           </p>
 
           <a href="#about" className="mx-auto md:mx-0">

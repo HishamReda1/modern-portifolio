@@ -40,7 +40,20 @@ const TECH_META: Record<Tech, { short: string; color: string }> = {
 };
 
 // ─── Slide data ───────────────────────────────────────────────────────────────
-const SLIDES: Slide[] = [
+const SLIDES: Slide[] = [ {
+    id: 9,
+    title: 'Digital Twin Demonstration Platform',
+    location: 'Interactive Real-Time Platform',
+    type: 'Digital Twin Development',
+    role: 'Digital Twin Developer',
+    description: 'Built an interactive digital twin platform featuring real-time walkthroughs, automatic doors, smart lighting, POIs linked to HVAC assets, and live EBO integration via authenticated REST APIs.',
+    technologies: ['Unreal Engine 5', 'Blueprints', 'UMG', 'REST APIs', 'EBO Integration'],
+    deliverables: ['Real-Time 3D Walkthroughs', 'Smart Automation Systems', 'Live EBO API Integration'],
+    image: 'https://images.unsplash.com/photo-1691405138982-613ed5b4dbb0?w=1920&h=1080&fit=crop&auto=format',
+    // Demo video for the Digital Twin slide
+    videoUrl: '/demos/UNREAL-ENGINE -PROTOTYPE.mp4',
+    accent: '#8000ff',
+  },
   {
     id: 1,
     title: 'RDC Schneider Electric Headquarters',
@@ -51,7 +64,7 @@ const SLIDES: Slide[] = [
     technologies: ['EBO', 'TGML', 'SketchUp', 'Lumion Pro', 'Photoshop'],
     deliverables: ['BMS Graphical Interfaces', 'Navigation Systems', 'Building Visualization'],
     image: 'https://images.unsplash.com/photo-1685720543547-cc4873188c75?w=1920&h=1080&fit=crop&auto=format',
-    videoUrl: '',
+    videoUrl: '/demos/schnider%20RDC.mp4',
     accent: '#00e89a',
   },
   {
@@ -64,7 +77,7 @@ const SLIDES: Slide[] = [
     technologies: ['EBO', 'TGML', 'SketchUp', 'V-Ray', 'Photoshop'],
     deliverables: ['Monitoring Graphics', 'Visualization Layouts', 'BMS Interfaces'],
     image: 'https://images.unsplash.com/photo-1570724546132-6a61bb3c3894?w=1920&h=1080&fit=crop&auto=format',
-    videoUrl: '',
+    videoUrl: '/demos/MOT.mp4',
     accent: '#00d4ff',
   },
   {
@@ -77,7 +90,7 @@ const SLIDES: Slide[] = [
     technologies: ['EBO', 'TGML', 'SketchUp', 'V-Ray', 'Photoshop'],
     deliverables: ['Operational Monitoring Screens', 'Graphical Navigation', 'Infrastructure Interfaces'],
     image: 'https://images.unsplash.com/photo-1556695736-d287caebc48e?w=1920&h=1080&fit=crop&auto=format',
-    videoUrl: '',
+    videoUrl: '/demos/ABO%20QIR%20STATION.mp4',
     accent: '#4da6ff',
   },
   {
@@ -90,8 +103,8 @@ const SLIDES: Slide[] = [
     technologies: ['EBO', 'TGML', 'SketchUp', 'Sweet Home 3D'],
     deliverables: ['Factory Monitoring Interfaces', 'Facility Visualization', 'Industrial Dashboards'],
     image: 'https://images.unsplash.com/photo-1717386255773-1e3037c81788?w=1920&h=1080&fit=crop&auto=format',
-    videoUrl: '',
-    accent: '#ffb347',
+    videoUrl: '/demos/SCHNIDER%20BADR.mp4',
+    accent: '#00e89a',
   },
   {
     id: 5,
@@ -103,7 +116,7 @@ const SLIDES: Slide[] = [
     technologies: ['EBO', 'TGML', 'KNX', 'GRMS', 'SketchUp'],
     deliverables: ['Hotel Automation Graphics', 'Room Management UI', 'Building Monitoring'],
     image: 'https://images.unsplash.com/photo-1677129667171-92abd8740fa3?w=1920&h=1080&fit=crop&auto=format',
-    videoUrl: '',
+    videoUrl: '/demos/voco.mp4',
     accent: '#fbbf24',
   },
   {
@@ -116,8 +129,8 @@ const SLIDES: Slide[] = [
     technologies: ['EBO', 'TGML', 'SketchUp', 'Sweet Home 3D'],
     deliverables: ['BMS Dashboards', 'Mixed-Use Visualization', 'Residential Interfaces'],
     image: 'https://images.unsplash.com/photo-1513061379709-ef0cd1695189?w=1920&h=1080&fit=crop&auto=format',
-    videoUrl: '',
-    accent: '#34d399',
+    videoUrl: '/demos/october%20plaza.mp4',
+    accent: '#00eeff',
   },
   {
     id: 7,
@@ -129,7 +142,7 @@ const SLIDES: Slide[] = [
     technologies: ['EBO', 'TGML', 'SketchUp', 'Sweet Home 3D'],
     deliverables: ['Graphical Monitoring Interfaces', 'Building Visualization Assets', 'Residential Dashboards'],
     image: 'https://images.unsplash.com/photo-1535391879778-3bae11d29a24?w=1920&h=1080&fit=crop&auto=format',
-    videoUrl: '',
+    videoUrl: '/demos/village%20west.mp4',
     accent: '#a78bfa',
   },
   {
@@ -143,22 +156,9 @@ const SLIDES: Slide[] = [
     deliverables: ['Hotel Monitoring Graphics', 'Operational Visualization', 'Resort Dashboards'],
     image: 'https://images.unsplash.com/photo-1581115685033-ccf1aa701722?w=1920&h=1080&fit=crop&auto=format',
     videoUrl: '',
-    accent: '#ff6b35',
+    accent: '#00b5d4',
   },
-  {
-    id: 9,
-    title: 'Digital Twin Demonstration Platform',
-    location: 'Interactive Real-Time Platform',
-    type: 'Digital Twin Development',
-    role: 'Digital Twin Developer',
-    description: 'Built an interactive digital twin platform featuring real-time walkthroughs, automatic doors, smart lighting, POIs linked to HVAC assets, and live EBO integration via authenticated REST APIs.',
-    technologies: ['Unreal Engine 5', 'Blueprints', 'UMG', 'REST APIs', 'EBO Integration'],
-    deliverables: ['Real-Time 3D Walkthroughs', 'Smart Automation Systems', 'Live EBO API Integration'],
-    image: 'https://images.unsplash.com/photo-1691405138982-613ed5b4dbb0?w=1920&h=1080&fit=crop&auto=format',
-    // Demo video for the Digital Twin slide
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-    accent: '#c084fc',
-  },
+  
 ];
 
 const AUTO_MS = 8000;
@@ -430,17 +430,32 @@ export function PortfolioSlider() {
   const hPadding   = isMobile ? 16 : isTablet ? 28 : 48;
   const headerH    = isMobile ? 48 : 56;
   const bottomH    = isMobile ? 52 : 56;
-  const titleSize  = isMobile ? '1.25rem' : isTablet ? '1.6rem' : 'clamp(1.5rem, 2.8vw, 2.5rem)';
+  const titleSize  = isMobile ? '1.15rem' : isTablet ? '1.45rem' : 'clamp(1.3rem, 2.4vw, 2.1rem)';
   const infoGrid   = isMobile ? '1fr' : isTablet ? '1fr 1fr' : '150px 1fr 300px';
+
+  // Container height — fixed block, NOT full-screen
+  const containerH = isMobile ? 560 : isTablet ? 620 : 720;
+
+  // Video height = container minus all surrounding fixed-height elements
+  const barsH     = headerH + bottomH + 2;      // top bar + bottom bar + progress line
+  const titleH    = isMobile ? 72 : 82;          // title block estimated height
+  const infoH     = isMobile ? 115 : isTablet ? 95 : 72; // info strip estimated height
+  const contentPad = isMobile ? 28 : 36;         // top+bottom padding of content area
+  const gapsH     = isMobile ? 12 * 2 : 14 * 2; // two flex gaps
+  const videoH    = Math.max(containerH - barsH - titleH - infoH - contentPad - gapsH, 140);
 
   return (
     <div
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
       style={{
-        position: 'fixed', inset: 0, overflow: 'hidden',
+        position: 'relative',
+        width: '100%',
+        height: containerH,
+        overflow: 'hidden',
         fontFamily: '"Plus Jakarta Sans", sans-serif',
         background: '#03050e',
+        flexShrink: 0,
       }}
     >
       {/* ── Immersive background ── */}
@@ -480,7 +495,7 @@ export function PortfolioSlider() {
       </div>
 
       {/* ── Layout ── */}
-      <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', height: '100dvh' }}>
+      <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', height: '100%' }}>
 
         {/* Top bar */}
         <div style={{
@@ -504,13 +519,13 @@ export function PortfolioSlider() {
           </div>
         </div>
 
-        {/* Scrollable content */}
+        {/* Content area */}
         <div style={{
           flex: 1, overflow: 'hidden',
           display: 'flex', flexDirection: 'column',
           alignItems: 'center', justifyContent: 'center',
-          padding: isMobile ? '16px' : isTablet ? '20px 28px' : '20px 48px',
-          gap: isMobile ? 12 : 16,
+          padding: isMobile ? '14px 16px' : isTablet ? '18px 28px' : '18px 48px',
+          gap: isMobile ? 12 : 14,
         }}>
 
           {/* Title block */}
@@ -529,6 +544,8 @@ export function PortfolioSlider() {
                 {slide.location}
               </span>
             </div>
+            
+            {/* التعديل هنا: شيلنا الجريدينت وخلينا التيكست أبيض صريح عشان ميضربش */}
             <h1 style={{
               fontFamily: '"Oxanium", sans-serif',
               fontSize: titleSize,
@@ -536,14 +553,12 @@ export function PortfolioSlider() {
               letterSpacing: '-0.01em',
               lineHeight: 1.1,
               margin: '0 0 8px',
-              background: `linear-gradient(115deg, #ffffff 0%, rgba(255,255,255,0.72) 55%, ${slide.accent}bb 100%)`,
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              transition: 'background 0.5s ease',
+              color: '#ffffff',
+              transition: 'color 0.5s ease',
             }}>
               {slide.title}
             </h1>
+
             <span style={{
               fontFamily: '"JetBrains Mono", monospace',
               fontSize: isMobile ? 9 : 10,
@@ -563,11 +578,12 @@ export function PortfolioSlider() {
           {/* Video hero */}
           <div style={{
             width: '100%', maxWidth: 1100,
+            flexShrink: 0,
             opacity: contentVisible ? 1 : 0,
             transform: `scale(${contentVisible ? 1 : 0.97}) translateY(${yOffset})`,
             transition: 'opacity 0.4s ease 0.04s, transform 0.48s cubic-bezier(0.22,1,0.36,1) 0.04s',
           }}>
-            <VideoHero slide={slide} active={contentVisible} onPlay={() => setVideoOpen(true)} isMobile={isMobile} />
+            <VideoHero slide={slide} active={contentVisible} onPlay={() => setVideoOpen(true)} isMobile={isMobile} videoH={videoH} />
           </div>
 
           {/* Info strip */}
@@ -635,7 +651,7 @@ export function PortfolioSlider() {
         </div>
       </div>
 
-      {/* Floating side arrows (tablet+) */}
+      {/* Floating side arrows — absolute inside the component (tablet+) */}
       {!isMobile && (
         <>
           <SideArrow side="left" onClick={prev} accent={slide.accent} />
@@ -652,11 +668,11 @@ export function PortfolioSlider() {
 }
 
 // ─── Video Hero ───────────────────────────────────────────────────────────────
-function VideoHero({ slide, active, onPlay, isMobile }: {
-  slide: Slide; active: boolean; onPlay: () => void; isMobile: boolean;
+function VideoHero({ slide, active, onPlay, isMobile, videoH }: {
+  slide: Slide; active: boolean; onPlay: () => void; isMobile: boolean; videoH: number;
 }) {
   const [hovered, setHovered] = useState(false);
-  const btnSize = isMobile ? 52 : 64;
+  const btnSize = isMobile ? 48 : 60;
 
   return (
     <div
@@ -664,7 +680,9 @@ function VideoHero({ slide, active, onPlay, isMobile }: {
       onMouseLeave={() => setHovered(false)}
       onClick={onPlay}
       style={{
-        position: 'relative', width: '100%', paddingBottom: '56.25%',
+        position: 'relative',
+        width: '100%',
+        height: videoH,   // explicit px height — no padding-bottom trick
         borderRadius: isMobile ? 10 : 14,
         overflow: 'hidden',
         border: `1px solid rgba(255,255,255,0.07)`,
@@ -846,7 +864,7 @@ function SideArrow({ side, onClick, accent }: { side: 'left' | 'right'; onClick:
       onMouseEnter={() => setHov(true)}
       onMouseLeave={() => setHov(false)}
       style={{
-        position: 'fixed', [side]: 16, top: '50%', transform: 'translateY(-50%)',
+        position: 'absolute', [side]: 14, top: '50%', transform: 'translateY(-50%)',
         zIndex: 10,
         width: 40, height: 40, borderRadius: '50%',
         border: hov ? `1px solid ${accent}55` : '1px solid rgba(255,255,255,0.1)',
