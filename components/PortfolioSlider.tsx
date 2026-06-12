@@ -41,7 +41,7 @@ const TECH_META: Record<Tech, { short: string; color: string }> = {
 
 // ─── Slide data ───────────────────────────────────────────────────────────────
 const SLIDES: Slide[] = [ {
-    id: 9,
+    id: 1,
     title: 'Digital Twin Demonstration Platform',
     location: 'Interactive Real-Time Platform',
     type: 'Digital Twin Development',
@@ -55,7 +55,7 @@ const SLIDES: Slide[] = [ {
     accent: '#8000ff',
   },
   {
-    id: 1,
+    id: 2,
     title: 'RDC Schneider Electric Headquarters',
     location: 'Riyadh, Saudi Arabia',
     type: 'BMS GUI Engineering',
@@ -68,7 +68,7 @@ const SLIDES: Slide[] = [ {
     accent: '#00e89a',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Ministry of Tourism',
     location: 'Saudi Arabia',
     type: 'BMS GUI Engineering',
@@ -81,7 +81,7 @@ const SLIDES: Slide[] = [ {
     accent: '#00d4ff',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Abu Qir Metro Station',
     location: 'Alexandria, Egypt',
     type: 'Infrastructure GUI Engineering',
@@ -94,7 +94,7 @@ const SLIDES: Slide[] = [ {
     accent: '#4da6ff',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Schneider Badr Factory',
     location: 'Badr City, Egypt',
     type: 'Industrial BMS GUI Engineering',
@@ -107,7 +107,7 @@ const SLIDES: Slide[] = [ {
     accent: '#00e89a',
   },
   {
-    id: 5,
+    id: 6,
     title: 'VOCO Hotel Arabella Plaza',
     location: 'Egypt',
     type: 'Hotel Automation GUI',
@@ -120,7 +120,7 @@ const SLIDES: Slide[] = [ {
     accent: '#fbbf24',
   },
   {
-    id: 6,
+    id: 7,
     title: 'October Plaza',
     location: '6th of October City, Egypt',
     type: 'BMS GUI Engineering',
@@ -133,7 +133,7 @@ const SLIDES: Slide[] = [ {
     accent: '#00eeff',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Village West',
     location: 'Egypt',
     type: 'BMS GUI Engineering',
@@ -145,20 +145,7 @@ const SLIDES: Slide[] = [ {
     videoUrl: '/demos/village%20west.mp4',
     accent: '#a78bfa',
   },
-  {
-    id: 8,
-    title: 'Sheraton Soma Bay',
-    location: 'Hurghada, Egypt',
-    type: 'Hotel BMS GUI Engineering',
-    role: 'GUI Engineer',
-    description: 'Designed hotel monitoring graphics and operational visualization systems for a resort-scale hospitality venue.',
-    technologies: ['EBO', 'TGML', 'SketchUp', 'Sweet Home 3D'],
-    deliverables: ['Hotel Monitoring Graphics', 'Operational Visualization', 'Resort Dashboards'],
-    image: 'https://images.unsplash.com/photo-1581115685033-ccf1aa701722?w=1920&h=1080&fit=crop&auto=format',
-    videoUrl: '',
-    accent: '#00b5d4',
-  },
-  
+
 ];
 
 const AUTO_MS = 8000;
@@ -498,26 +485,7 @@ export function PortfolioSlider() {
       <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', height: '100%' }}>
 
         {/* Top bar */}
-        <div style={{
-          flexShrink: 0, height: headerH,
-          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-          padding: `0 ${hPadding}px`,
-          borderBottom: '1px solid rgba(255,255,255,0.05)',
-          backdropFilter: 'blur(12px)',
-          background: 'rgba(3,5,14,0.5)',
-        }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            <div style={{ width: 7, height: 7, borderRadius: '50%', background: slide.accent, boxShadow: `0 0 10px ${slide.accent}`, transition: 'all 0.5s' }} />
-            {!isMobile && (
-              <span style={{ fontFamily: '"Oxanium", sans-serif', fontSize: 10, fontWeight: 600, letterSpacing: '0.32em', color: 'rgba(255,255,255,0.35)', textTransform: 'uppercase' }}>
-                Portfolio · GUI Engineering &amp; Digital Twin
-              </span>
-            )}
-          </div>
-          <div style={{ fontFamily: '"JetBrains Mono", monospace', fontSize: 11, color: 'rgba(255,255,255,0.22)', letterSpacing: '0.08em' }}>
-            {String(idx + 1).padStart(2, '0')} / {String(SLIDES.length).padStart(2, '0')}
-          </div>
-        </div>
+     
 
         {/* Content area */}
         <div style={{

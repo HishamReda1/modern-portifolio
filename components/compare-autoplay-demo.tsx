@@ -36,7 +36,7 @@ export default function CompareDemo() {
 
           {/* Icons */}
           <div className="flex justify-center items-center mt-6 gap-3">
-            {projectIcons[0].icons.map((icon, index) => (
+            {projectIcons[0]?.icons?.map((icon, index) => (
               <div
                 key={index}
                 className="border border-white/[.2] rounded-full bg-black lg:w-14 lg:h-14 w-12 h-12 flex justify-center items-center"
@@ -81,7 +81,7 @@ export default function CompareDemo() {
 
           {/* Icons */}
           <div className="flex justify-center items-center mt-6 gap-3">
-            {projectIcons[1].icons.map((icon, index) => (
+            {projectIcons[1]?.icons?.map((icon, index) => (
               <div
                 key={index}
                 className="border border-white/[.2] rounded-full bg-black lg:w-14 lg:h-14 w-12 h-12 flex justify-center items-center"
@@ -127,7 +127,7 @@ export default function CompareDemo() {
 
           {/* Icons */}
           <div className="flex justify-center items-center mt-6 gap-3">
-            {projectIcons[2].icons.map((icon, index) => (
+            {projectIcons[2]?.icons?.map((icon, index) => (
               <div
                 key={index}
                 className="border border-white/[.2] rounded-full bg-black lg:w-14 lg:h-14 w-12 h-12 flex justify-center items-center"
@@ -138,6 +138,127 @@ export default function CompareDemo() {
           </div>
         </div>
       </section>
+
+      {/* Divider */}
+      <hr className="border-neutral-700" />
+
+      {/* Project 4: FAHU */}
+      <section className="w-full flex flex-col items-center gap-8">
+        <div className="w-full flex items-center justify-center">
+          <div className="p-2 md:p-4 border rounded-3xl w-full h-[60vh] md:h-[70vh] overflow-hidden">
+            <Compare
+              firstImage="/FAHU-BEFOR.jpeg"
+              secondImage="/FAHU-AFTER.png"
+              firstImageClassName="object-cover w-full h-full"
+              secondImageClassname="object-cover w-full h-full"
+              className="w-full h-full rounded-2xl"
+              slideMode="hover"
+              autoplay={true}
+            />
+          </div>
+        </div>
+
+        <div className="w-full max-w-3xl text-center text-neutral-300">
+          <h3 className="text-2xl md:text-3xl font-semibold text-white mb-4">
+            Fresh Air Handling Unit (FAHU)
+          </h3>
+          <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
+            A complete visual upgrade for the FAHU system interface. The intricate internal components, airflow paths, and mechanical structure were modeled entirely in <strong>SketchUp</strong> and rendered with high photorealism using <strong>V-Ray</strong> and <strong>TGML</strong> to ensure a seamless and clear BMS integration.
+          </p>
+
+          <div className="flex justify-center items-center mt-6 gap-3">
+            {projectIcons[3]?.icons?.map((icon, index) => (
+              <div
+                key={index}
+                className="border border-white/[.2] rounded-full bg-black lg:w-14 lg:h-14 w-12 h-12 flex justify-center items-center"
+              >
+                <img src={icon} alt={`icon-${index}`} className="p-3" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <hr className="border-neutral-700" />
+
+      {/* Project 5: Fan Coil */}
+      <section className="w-full flex flex-col items-center gap-8">
+        <div className="w-full flex items-center justify-center">
+          <div className="p-2 md:p-4 border rounded-3xl w-full h-[60vh] md:h-[70vh] overflow-hidden">
+            <Compare
+              firstImage="/fanCoil-before.jpeg"
+              secondImage="/fanCoil-after.png"
+              firstImageClassName="object-cover w-full h-full"
+              secondImageClassname="object-cover w-full h-full"
+              className="w-full h-full rounded-2xl"
+              slideMode="hover"
+              autoplay={true}
+            />
+          </div>
+        </div>
+
+        <div className="w-full max-w-3xl text-center text-neutral-300">
+          <h3 className="text-2xl md:text-3xl font-semibold text-white mb-4">
+            DX Split Unit / Fan Coil
+          </h3>
+          <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
+            Detailed 3D representation of a ceiling-concealed Fan Coil Unit. Precise mechanical details, ductwork, and piping connections were carefully crafted in <strong>SketchUp</strong> and brought to life with realistic lighting and materials using <strong>V-Ray</strong>and <strong>TGML</strong>.
+          </p>
+
+          <div className="flex justify-center items-center mt-6 gap-3">
+            {projectIcons[4]?.icons?.map((icon, index) => (
+              <div
+                key={index}
+                className="border border-white/[.2] rounded-full bg-black lg:w-14 lg:h-14 w-12 h-12 flex justify-center items-center"
+              >
+                <img src={icon} alt={`icon-${index}`} className="p-3" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <hr className="border-neutral-700" />
+
+      {/* Project 6: Pump Station */}
+      <section className="w-full flex flex-col items-center gap-8">
+        <div className="w-full flex items-center justify-center">
+          <div className="p-2 md:p-4 border rounded-3xl w-full h-[60vh] md:h-[70vh] overflow-hidden">
+            <Compare
+              firstImage="/station-before.jpeg"
+              secondImage="/STATION-AFTER.png"
+              firstImageClassName="object-cover w-full h-full"
+              secondImageClassname="object-cover w-full h-full"
+              className="w-full h-full rounded-2xl"
+              slideMode="hover"
+              autoplay={true}
+            />
+          </div>
+        </div>
+
+        <div className="w-full max-w-3xl text-center text-neutral-300">
+          <h3 className="text-2xl md:text-3xl font-semibold text-white mb-4">
+            Water Booster Pump Station
+          </h3>
+          <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
+            Transforming a real-world pump room photo into a clean, interactive 3D graphical interface. The pipes, expansion tanks, and booster pumps were accurately modeled in <strong>SketchUp</strong> and rendered using <strong>V-Ray</strong> and <strong>TGML</strong> to create a professional dashboard view.
+          </p>
+
+          <div className="flex justify-center items-center mt-6 gap-3">
+            {projectIcons[5]?.icons?.map((icon, index) => (
+              <div
+                key={index}
+                className="border border-white/[.2] rounded-full bg-black lg:w-14 lg:h-14 w-12 h-12 flex justify-center items-center"
+              >
+                <img src={icon} alt={`icon-${index}`} className="p-3" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }
