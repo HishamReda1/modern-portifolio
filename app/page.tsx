@@ -8,9 +8,14 @@ import Footer from "@/components/Footer";
 import Clients from "@/components/Clients";
 import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
+<<<<<<< HEAD
 import AutoSlider from "@/components/pixelated-canvas-demo";
 import PortfolioSlider from "@/components/PortfolioSlider";
 import RecentProjects from "@/components/RecentProjects";
+=======
+import RecentProjects from "@/components/RecentProjects";
+import AutoSlider from "@/components/pixelated-canvas-demo";
+>>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
 import TechStack from "@/components/TechStack";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
@@ -22,8 +27,14 @@ const Home = () => {
         <FloatingNav navItems={navItems} />
       
         <AutoSlider />
+<<<<<<< HEAD
         <PortfolioSlider />
         <RecentProjects />
+=======
+        <RecentProjects />
+        {/* Orman Hospital Project Section */}
+ 
+>>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
         <Clients />
         <Experience />
         <TechStack/>

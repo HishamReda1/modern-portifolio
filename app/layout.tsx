@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+<<<<<<< HEAD
 import {
   Inter,
   Cairo,
@@ -6,12 +7,16 @@ import {
   Oxanium,
   JetBrains_Mono,
 } from "next/font/google";
+=======
+import { Inter, Cairo } from "next/font/google";
+>>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
 
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
 const inter = Inter({ subsets: ["latin"] });
 const cairo = Cairo({ subsets: ["arabic", "latin"] });
+<<<<<<< HEAD
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-plus-jakarta-sans",
@@ -28,6 +33,8 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   display: "swap",
 });
+=======
+>>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
 
 export const metadata: Metadata = {
   title: "Hisham's Portfolio",
@@ -44,9 +51,13 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
+<<<<<<< HEAD
       <body
         className={`${inter.className} ${cairo.className} ${plusJakartaSans.variable} ${oxanium.variable} ${jetbrainsMono.variable}`}
       >
+=======
+      <body className={`${inter.className} ${cairo.className}`}>
+>>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

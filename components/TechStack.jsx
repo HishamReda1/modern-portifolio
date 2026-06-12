@@ -7,15 +7,21 @@ import gsap from "gsap";
 import TitleHeader from "../components/ui/TitleHeader";
 
 import { techStackIcons } from "@/data";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
 const TechIconCardExperience = dynamic(
   () => import("@/components/models/tech_logos/TechIconCardExperience"),
   { ssr: false }
 );
+<<<<<<< HEAD
 const TechSkillBadge = dynamic(
   () => import("@/components/models/tech_logos/TechSkillBadge"),
   { ssr: false }
 );
+=======
+>>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
 const TechStack = () => {
   useGSAP(() => {
     gsap.fromTo(
@@ -58,6 +64,7 @@ const TechStack = () => {
               {/* Content */}
               <div className="relative z-10 flex flex-col items-center justify-center xl:gap-5 xl:h-[50vh] overflow-hidden group-hover:cursor-grab">
                 <div className="flex justify-center items-center w-52 h-60 relative">
+<<<<<<< HEAD
                   {techStackIcon.type === "badge" ? (
                     <TechSkillBadge
                       short={techStackIcon.short}
@@ -66,6 +73,9 @@ const TechStack = () => {
                   ) : (
                     <TechIconCardExperience model={techStackIcon} />
                   )}
+=======
+                  <TechIconCardExperience model={techStackIcon} />
+>>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
                 </div>
 
                 <div className="w-full px-4">

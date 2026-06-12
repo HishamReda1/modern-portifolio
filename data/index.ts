@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import { TECH_META, type Tech } from "@/lib/portfolio-slider-data";
 
+=======
+>>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -14,6 +17,7 @@ export const navItems = [
 
 export const expCards = [
   {
+<<<<<<< HEAD
     review: "",
     imgPath: "/logos/acs-logo.png",
     logoPath: "/logos/acs-logo.png",
@@ -26,12 +30,18 @@ export const expCards = [
     ],
   },
   {
+=======
+>>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
     review:
       "I would like to express my sincere thanks and appreciation to Eng. HESHAM. Since his very first day... he has shown great dedication... You are a true example of dedication and creativity and your presence is a genuine asset to our team. - ALAA ABDEL NASSER OMAR, CEO",
     imgPath: "/Logoicon (1).svg",
     logoPath: "/Logoicon (1).svg",
     title: "3D Visualizer & Frontend Developer - Eits Egypt",
+<<<<<<< HEAD
     date: "March 2025 - September 2025",
+=======
+    date: "March 2025 - Present",
+>>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
     responsibilities: [
       "Specializing in creating and integrating 3D components for the Building Management System (BMS) platform.",
       "Designed realistic, interactive 3D visualizations to enhance system usability and client presentations.",
@@ -40,7 +50,11 @@ export const expCards = [
   },
   {
     review:
+<<<<<<< HEAD
       "We are all really pleased with Hisham's work. The codebase is now well-structured and styled, and we'd much rather continue building on his work than on the old one. We would be very happy to keep collaborating with him on further additions. - Fabian Maier, TEAM LEADER",
+=======
+      "We are all really pleased with Hisham’s work. The codebase is now well-structured and styled, and we’d much rather continue building on his work than on the old one. We would be very happy to keep collaborating with him on further additions. - Fabian Maier, TEAM LEADER",
+>>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
     imgPath: "/as_logo.svg",
     logoPath: "/as_logo.svg",
     title: "Frontend Developer - Cosmic Coasters (Remote)",
@@ -271,6 +285,7 @@ export const projectIcons = [
     ],
   },
 ];
+<<<<<<< HEAD
 
 
 export const techStackIcons = [
@@ -289,19 +304,46 @@ export const techStackIcons = [
   },
   {
     name: "Lumion Pro",
+=======
+export const techStackIcons = [
+  {
+    name: "React Developer",
+    modelPath: "/models/react_logo-transformed.glb",
+    scale: 1,
+    rotation: [0, 0, 0],
+  },
+
+ 
+  {
+    name: "Tree js",
+    modelPath: "/models/three.js-transformed.glb",
+    scale: 0.05,
+    rotation: [0, 0, 0],
+  },
+
+  {
+    name: "Lumion pro",
+>>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
     modelPath: "/models/lumion.gltf",
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
+<<<<<<< HEAD
     name: "V-Ray",
     modelPath: "/models/Vray-Logo--Streamline-Logos.glb",
     scale: 2,
+=======
+    name: "sketchup",
+    modelPath: "/models/sketchup.gltf",
+    scale: 0.05,
+>>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
     rotation: [0, 0, 0],
   },
 
 
 
+<<<<<<< HEAD
   // --- Schneider / TGML ---
    {
     name: "Schneider EBO",
@@ -317,6 +359,16 @@ export const techStackIcons = [
     scale: 1,
     rotation: [0, 0, 0],
   },
+=======
+
+
+
+
+
+
+
+
+>>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
 
 ];
 export const techStackImgs = [

@@ -25,7 +25,11 @@ const Hero = () => {
       <div className="relative z-10 flex justify-start w-full max-w-7xl px-5 sm:px-10 backdrop-blur-sm md:backdrop-blur-none">
         <div className="max-w-[80vw] md:max-w-xl lg:max-w-[40vw] flex flex-col items-center md:items-start justify-center text-center md:text-left">
           <h2 className="uppercase tracking-widest text-xs text-blue-100 max-w-80 text-center md:text-left">
+<<<<<<< HEAD
            REAL-TIME BUILDING SYSTEMS & DIGITAL TWIN INTERFACES
+=======
+            Dynamic Web Magic with Next.js
+>>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
           </h2>
 
 
@@ -33,7 +37,11 @@ const Hero = () => {
 
 
           <p className="text-center md:text-left md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">
+<<<<<<< HEAD
             Hisham Gbely, a GUI Engineer | Schneider EBO | Digital Twin | Unreal Engine Developer 
+=======
+            Hisham Gbely, a 3D Visualizer & Next.js Developer
+>>>>>>> 1da11da113bbae3c09615f9d2f025dfd4c32b4ff
             based in EGYPT.
           </p>
 
