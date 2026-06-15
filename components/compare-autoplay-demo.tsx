@@ -65,18 +65,7 @@ const SLIDES: Slide[] = [
     imageAfter: '/مستشفى الاورمان للاطفال في سوهاج.png',
     accent: '#00e89a',
   },
-  {
-    id: 3,
-    title: 'AHU Components - EITS',
-    location: 'Industrial Facility',
-    type: 'HVAC Visualization',
-    role: 'GUI Engineer',
-    description: 'Complete build of all Air Handling Unit (AHU) components for EITS, highlighting technical details and real-world visualization.',
-    technologies: ['SketchUp', 'Lumion Pro'],
-    imageBefore: '/AHU BEFORE.PNG',
-    imageAfter: '/AHU AFTER.PNG',
-    accent: '#00d4ff',
-  },
+
   {
     id: 4,
     title: 'Fresh Air Handling Unit (FAHU)',
